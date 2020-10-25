@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <title>To-do App</title>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__title">To-do</div>
+            <div class="header__subtitle">What do you need to do</div>
+        </div>
+    </header>
+    <div class="actions">
+        <div class="actions__container">
+
+            <input id="filter-todos" class="input" type="text" placeholder="filter todos" />
+            <label class="checkbox">
+                <input type="checkbox" name="firstName" id="checking"> Hide Completed
+            </label>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <select name="" id="selection">
+            <option value="byEdited">Sort by Last Edited</option>
+            <option value="byCreated">Sort by recently created</option>
+            <option value="alphabetical">Sort alphabetically</option>
+        </select>
+
+
+        <div id='todos'></div>
+        <form id="new-todo">
+            <input type="text" class="input" name="newTodo" id="" placeholder="new todo">
+            <button id="add-todo" class="button" type="submit">click to add todo</button>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
+    <script src="./scripts/todo-app-functions.js"></script>
+    <script src="./scripts/todo-app.js"></script>
+    <script src="./scripts/uuidv4.js"></script>
+</body>
+
+</html>
